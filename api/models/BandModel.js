@@ -11,9 +11,9 @@ class BandModel {
 		return dataBase.find({docType: docTypes.BAND});
 	}
 
-	getBand(id) {
+	getBand(bandId) {
 
-		return dataBase.findOne({_id: id, docType: docTypes.BAND});
+		return dataBase.findOne({_id: bandId, docType: docTypes.BAND});
 	}
 
     getBandAlbums (bandId) {

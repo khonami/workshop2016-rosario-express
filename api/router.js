@@ -28,5 +28,7 @@ router.get('/bands/:id/artists', bandController.getArtists);
 
 // Albums
 router.get('/albums', albumController.getList);
+router.get('/albums/:id', albumController.getAlbum);
+router.get('/albums/:id/tracks', albumController.getTracks);
 
 module.exports = router;
