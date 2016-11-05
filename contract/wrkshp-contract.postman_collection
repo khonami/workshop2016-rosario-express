@@ -3,6 +3,7 @@
 	"name": "wrkshp-contract",
 	"description": "",
 	"order": [
+		"580c70fe-5a85-55bd-0923-2c42e0c8dbad",
 		"d52ec2b7-8c8f-9a71-2fd0-fe1f52ebde82",
 		"365e4f75-8181-e2e2-a5c5-d73dfbc5f922"
 	],
@@ -14,7 +15,7 @@
 		{
 			"id": "365e4f75-8181-e2e2-a5c5-d73dfbc5f922",
 			"headers": "",
-			"url": "localhost:5000/bands/1111/albums",
+			"url": "localhost:5000/bands/1n3Oa4AC1FEgQ2E2/albums",
 			"preRequestScript": null,
 			"pathVariables": {},
 			"method": "GET",
@@ -24,8 +25,27 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1478357916456,
-			"name": "Albums de una Banda",
+			"time": 1478358197538,
+			"name": "Get All Band Albums",
+			"description": "",
+			"collectionId": "94798398-0190-aefa-a42e-6160ad3a8455",
+			"responses": []
+		},
+		{
+			"id": "580c70fe-5a85-55bd-0923-2c42e0c8dbad",
+			"headers": "",
+			"url": "localhost:5000/bands/1n3Oa4AC1FEgQ2E2",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1478361870782,
+			"name": "Find band by ID",
 			"description": "",
 			"collectionId": "94798398-0190-aefa-a42e-6160ad3a8455",
 			"responses": []
@@ -44,7 +64,7 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1478357907814,
-			"name": "Lista de Bandas",
+			"name": "All bands",
 			"description": "",
 			"collectionId": "94798398-0190-aefa-a42e-6160ad3a8455",
 			"responses": []

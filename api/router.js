@@ -15,6 +15,7 @@ const bandController = require('./controllers/BandController').instance;
 // API Routes
 router.get('/tracks', trackController.getList);
 router.get('/bands', bandController.getList);
+router.get('/bands/:id', bandController.getBand);
 router.get('/bands/:id/albums', bandController.getAlbums);
 
 module.exports = router;

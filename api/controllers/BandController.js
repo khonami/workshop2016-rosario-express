@@ -4,6 +4,12 @@ const band = require('../models/BandModel').instance;
 
 class TrackController {
 
+	getBand (req,res) {
+		band.getBand(req.params.id)
+		.then(document => res.json(document))
+		.catch(error => res.json({error: error.message}));
+	}
+
 	getList (req, res) {
 		band.getList()
 		.then(documents => res.json(documents))
