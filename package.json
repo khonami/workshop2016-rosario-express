@@ -4,7 +4,7 @@
   "description": "An API developed using express.js. For training purposes",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "dbseed": "node scripts/dbseed.js",
     "dbdrop": "node scripts/dbdrop.js",
     "spotify-fetcher": "node scripts/spotify-fetcher.js"
@@ -34,6 +34,7 @@
     "express": "^4.14.0",
     "lodash": "^4.16.6",
     "nedb": "^1.8.0",
+    "nodemon": "^1.11.0",
     "spotify-web-api-node": "^2.3.6",
     "to-snake-case": "^1.0.0"
   }

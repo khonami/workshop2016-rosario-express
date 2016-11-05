@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const colors = require('colors/safe');
-const trackController = require('./controllers/TrackController').instance; //Sample controller
+const trackController = require('./controllers/TrackController').instance;
+const bandController = require('./controllers/BandController').instance;
 
 // Specific router middleware that shows the request timestamp
 router.use((req, res, next) => {
@@ -9,7 +10,8 @@ router.use((req, res, next) => {
 });
 
 // API Routes
-router.get('/tracks', trackController.getList); //Sample route
+router.get('/tracks', trackController.getList);
+router.get('/bands', bandController.getList);
 
 
 module.exports = router;
