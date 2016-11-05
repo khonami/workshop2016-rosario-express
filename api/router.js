@@ -19,6 +19,8 @@ const albumController = require('./controllers/AlbumController').instance;
 
 // Tracks
 router.get('/tracks', trackController.getList);
+router.get('/tracks/:id/comments', trackController.getComments);
+router.post('/tracks/:id/comments', trackController.addComment);
 
 // Bands
 router.get('/bands', bandController.getList);
