@@ -1,0 +1,53 @@
+{
+	"id": "94798398-0190-aefa-a42e-6160ad3a8455",
+	"name": "wrkshp-contract",
+	"description": "",
+	"order": [
+		"d52ec2b7-8c8f-9a71-2fd0-fe1f52ebde82",
+		"365e4f75-8181-e2e2-a5c5-d73dfbc5f922"
+	],
+	"folders": [],
+	"timestamp": 1478355050392,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "365e4f75-8181-e2e2-a5c5-d73dfbc5f922",
+			"headers": "",
+			"url": "localhost:5000/bands/1111/albums",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1478357916456,
+			"name": "Albums de una Banda",
+			"description": "",
+			"collectionId": "94798398-0190-aefa-a42e-6160ad3a8455",
+			"responses": []
+		},
+		{
+			"id": "d52ec2b7-8c8f-9a71-2fd0-fe1f52ebde82",
+			"headers": "",
+			"url": "localhost:5000/bands",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1478357907814,
+			"name": "Lista de Bandas",
+			"description": "",
+			"collectionId": "94798398-0190-aefa-a42e-6160ad3a8455",
+			"responses": []
+		}
+	]
+}
