@@ -18,7 +18,7 @@ class TrackController {
 
 	addComment(req, res) {
 		track.addComment(req.params.id, req.body.message)
-		.then(documents => res.json(documents))
+		.then(affectedRows => affectedRows == 1 ? res.sendStatus(200) : res.sendStatus(500))
 		.catch(error => res.json({error: error.message}));
 	}
 }
