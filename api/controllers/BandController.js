@@ -21,6 +21,12 @@ class TrackController {
 		.then(documents => res.json(documents))
 		.catch(error => res.json({error: error.message}));
 	}
+
+	getArtists(req, res) {
+		band.getBandArtists(req.params.id)
+		.then(documents => res.json(documents))
+		.catch(error => res.json({error: error.message}));
+	}
 }
 
 exports.TrackController = TrackController;

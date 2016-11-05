@@ -28,6 +28,19 @@ class BandModel {
                 .catch(error => reject(error));
         });
     }
+
+    getBandArtists (bandId) {
+
+        return new Promise ((resolve, reject) => {
+            this.getBand(bandId)
+                .then(band => {
+                    const artistsId = band.artists;
+                    return dataBase.find({_id: {$in: artistsId}, docType: docTypes.ARTIST});
+                })
+                .then(artists => resolve(artists))
+                .catch(error => reject(error));
+        });
+    }
 }
 
 module.exports.BandModel = BandModel;

@@ -5,7 +5,8 @@
 	"order": [
 		"580c70fe-5a85-55bd-0923-2c42e0c8dbad",
 		"d52ec2b7-8c8f-9a71-2fd0-fe1f52ebde82",
-		"365e4f75-8181-e2e2-a5c5-d73dfbc5f922"
+		"365e4f75-8181-e2e2-a5c5-d73dfbc5f922",
+		"a1d43f86-d388-d78f-2229-a479ca75a57e"
 	],
 	"folders": [],
 	"timestamp": 1478355050392,
@@ -46,6 +47,25 @@
 			"helperAttributes": {},
 			"time": 1478361870782,
 			"name": "Find band by ID",
+			"description": "",
+			"collectionId": "94798398-0190-aefa-a42e-6160ad3a8455",
+			"responses": []
+		},
+		{
+			"id": "a1d43f86-d388-d78f-2229-a479ca75a57e",
+			"headers": "",
+			"url": "localhost:5000/bands/1n3Oa4AC1FEgQ2E2/artists",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1478362132983,
+			"name": "Get All Band Artists",
 			"description": "",
 			"collectionId": "94798398-0190-aefa-a42e-6160ad3a8455",
 			"responses": []

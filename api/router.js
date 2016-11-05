@@ -13,9 +13,14 @@ const bandController = require('./controllers/BandController').instance;
 // });
 
 // API Routes
+
+// Tracks
 router.get('/tracks', trackController.getList);
+
+// Bands
 router.get('/bands', bandController.getList);
 router.get('/bands/:id', bandController.getBand);
 router.get('/bands/:id/albums', bandController.getAlbums);
+router.get('/bands/:id/artists', bandController.getArtists);
 
 module.exports = router;
